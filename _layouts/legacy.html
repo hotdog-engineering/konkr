@@ -1,0 +1,24 @@
+<html lang="en">
+
+{% include head.html %}
+<base href="https://www.konkr.io/legacy/">
+
+<body>
+
+{% include legacygame.html %}
+
+<div class="page-content">
+    <div class="wrapper">
+        {{ content }}
+
+        <script src="/legacy/dist/vendor.bundle.js"></script>
+        <script src="/legacy/dist/bundle.js"></script>
+    </div>
+</div>
+
+{% include footer.html %}
+
+
+</body>
+
+</html>

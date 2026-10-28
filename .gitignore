@@ -1,0 +1,12 @@
+_site/*
+!_site/releases
+.sass-cache
+.idea
+.bundle
+/vendor
+/.jekyll-cache/
+
+# private Claude Code skills
+.claude/skills/
+/.playwright-mcp/
+/.wrangler/

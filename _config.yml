@@ -1,0 +1,41 @@
+# Site settings
+title: Konkr.io
+email: mike@konkr.io
+description: >
+  Konkr is a free turn-based strategy game that runs in your browser. Expand your kingdom, build up your economy, crush your enemies, then crush your allies too!
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://www.konkr.io"
+twitter_username: konkr_dev
+github_username:  michal-bures
+discord_link: https://discord.com/invite/C9HucB9arH
+konkr_data_url: https://michal-bures.github.io/konkr_data
+
+linkedin_url: "https://www.linkedin.com/in/michal-bures"
+excerpt_separator: <!-- excerpt-end -->
+
+# Build settings
+markdown: kramdown
+highlighter: true
+# Netlify and Cloudflare read _redirects and _headers from the built site, and Jekyll skips files starting with _ unless included
+include:
+  - _redirects
+  - _headers
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - netlify/
+  - wrangler.jsonc
+  - vendor/gems/
+  - vendor/ruby/-
+  - releases/
+keep_files:
+  - releases
+defaults:
+  - values:
+      sitemap:         false

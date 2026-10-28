@@ -1,0 +1,15 @@
+---
+layout: game
+permalink: /
+description: Konkr is a free turn-based strategy game that runs in your browser. Expand your kingdom, build up your economy and crush your enemies!
+seo_priority: 1
+seo_frequency: weekly
+---
+{% for post in site.posts limit:1 %}
+    <p class="posted-at">{{ post.date | date: "%b %-d, %Y" }}</p>
+    <h3><a href="{{post.url}}">{{post.title}}</a></h3>
+    {{post.excerpt}}
+    {% if post.content.size > post.excerpt.size %}
+        <a id='news-box-button' href="{{post.url}}" target='_blank'>Read full blog post »</a>
+    {% endif %}
+{% endfor %}
